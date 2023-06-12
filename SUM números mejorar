@@ -1,0 +1,28 @@
+# Programa de suma de dos números
+
+def sumar_numeros():
+    # Solicitar al usuario ingresar el primer número
+    while True:
+        try:
+            numero1 = float(input("Ingrese el primer número: "))
+            break
+        except ValueError:
+            print("Entrada inválida. Por favor, ingrese un número válido.")
+
+    # Solicitar al usuario ingresar el segundo número
+    while True:
+        try:
+            numero2 = float(input("Ingrese el segundo número: "))
+            break
+        except ValueError:
+            print("Entrada inválida. Por favor, ingrese un número válido.")
+
+    # Sumar los dos números
+    suma = numero1 + numero2
+
+    # Imprimir el resultado
+    print("La suma de los dos números es:", suma)
+
+
+# Llamar a la función para sumar los números
+sumar_numeros()
